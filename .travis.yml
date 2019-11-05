@@ -4,8 +4,11 @@ before_install:
 install: true
 script: "./gradlew build -x copyDistFiles"
             -./gradlew check
+# whitelist
 branches:
-  only: master
+  only:
+    - master
+    - stable
 matrix:
   include:
        - language: java
