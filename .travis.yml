@@ -4,3 +4,11 @@ before_install:
 install: true
 script: "./gradlew build -x copyDistFiles"
             -./gradlew check
+matrix:
+  include:
+       - language: java
+        jdk: oraclejdk8
+                  script:
+                    - ./mvnw test -B -q
+                  before_script:
+                    - cd ./backend/
