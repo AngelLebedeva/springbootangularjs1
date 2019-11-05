@@ -4,6 +4,8 @@ before_install:
 install: true
 script: "./gradlew build -x copyDistFiles"
             -./gradlew check
+branches:
+  only: master
 matrix:
   include:
        - language: java
