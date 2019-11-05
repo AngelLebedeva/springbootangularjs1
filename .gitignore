@@ -1,9 +1,5 @@
-.gradle/*
 .idea/*
-gradle/*
-wrapper/*
 .out/*
-/gradlew/*
 *.bat
 settings.gradle/*
 
