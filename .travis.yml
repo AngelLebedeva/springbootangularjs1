@@ -1,5 +1,6 @@
 language: java
+env:
+  - TERM=dumb
+
 script:
-      - ./gradlew check
-      - ./gradlew install -x check
-      - ./gradlew codeCoverageReport --continue
+  - ./gradlew assemble -x test
